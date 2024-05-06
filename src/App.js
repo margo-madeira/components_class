@@ -1,13 +1,6 @@
 import "./App.css";
-import { ShopItemClass } from "./ShopItemClass.js";
- /* const shopItemClass = new ShopItemClass(
-  "Tiger of Sweden",
-  "Leonard coat",
-  "Minimalistic coat in cotton-blend",
-  "Men's minimalistic overcoat in cotton-blend. Features a stand-up collar, concealed front closure and single back vent. Slim fit with clean, straight shape. Above-knee length.",
-  399,
-  "£"
-);  */
+import { ShopItemClass } from "./ShopItemClass";
+import { item } from "./Item";
 
 function App() {
   return (
@@ -17,8 +10,7 @@ function App() {
         <div className="highlight-overlay"></div>
       </div>
       <div className="window">
-        <ShopItemClass/>
-         
+      <ShopItemClass item={item} />   
       </div>
     </div>
   );
